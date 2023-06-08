@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: #080808;
+}
+
+.contenedor {
+
+  background-color: #e91212;
+  background-image: linear-gradient(315deg, #8b0707 0%, #b82e1f 74%);
+
+  justify-content: center;
+  box-sizing: content-box;
+  width: 95%;
+  margin: 10px auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: min-content;
+
+  grid-template-areas:
+    "parte0 parte0 parte0"
+    "parte1 parte2 parte3"
+    "parte4 parte4 parte4"
+
+}
+
+
+nav {
+
+  font-family: 'Cinzel', serif;
+  justify-content: center;
+  width: auto;
+
+  color: #080808;
+  padding: 10px;
+  display: flex;
+
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+
+}
+
+nav ul li {
+
+  margin-right: 30px;
+}
+
+nav ul li a {
+  color: #141414;
+  text-decoration: none;
+  padding: 5px;
+
+
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+header a img {
+
+  width: 100px;
+  border-radius: 20%;
+}
+
+.menu {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.parte0 {
+  background: url(../img/fondonav.png )no-repeat;
+  background-size: cover;
+  justify-content: space-around;
+  display: flex;
+
+  align-items: center;
+
+
+  align-items: center;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  border: solid #FFC500 10px;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  gap: 10px;
+  grid-area: parte0;
+}
+
+
+.parte1 {
+
+  width: 95%;
+  margin: 5px;
+  gap: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  grid-area: parte1;
+}
+
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parte2 {
+
+  font-family: 'Poltawski Nowy', serif;
+  grid-area: parte2;
+}
+
+.parte3 {
+
+  grid-area: parte3;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+h1,
+h4 {
+  text-align: center;
+}
+
+
+
+.parte4 {
+
+
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex: end;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  padding: 1em 0;
+  grid-area: parte4;
+}
+
+.tucasa {
+  font-family: 'Poltawski Nowy', serif;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  grid-area: tucasa;
+
+
+}
+
+
+.casa-box {
+  background-image: url(../img/hogwartswallpaper.jpg);
+  width: 95%;
+  margin: 10px auto;
+  align-items: center;
+
+  display: grid;
+  grid-gap: 10px;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: min-content;
+
+
+  grid-template-areas:
+    "parte0 parte0 parte0"
+    "tucasa tucasa tucasa"
+    "footercasa footercasa footercasa"
+}
+
+.footercasa {
+  margin: 10px auto;
+  justify-content: center;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex: end;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  padding: 1em 0;
+  grid-area: footercasa;
+}
+
+.casadiv {
+  margin-bottom: 10px;
+}
+
+.cuerpo-casa {
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3em;
+  position: relative;
+}
+
+.pelicont {
+  width: 95%;
+  margin: 10px auto;
+
+}
+
+.pelis {
+
+  margin: 10px auto;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.trailer {
+  font-family: 'Poltawski Nowy', serif;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  ;
+}
+
+.item {
+  margin: 10px;
+}
+
+.co-libros {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.cuerpo-libros {
+  margin: 10px;
+
+  position: absolute;
+  margin-bottom: 5em;
+
+
+}
+
+.cuerpofondo {
+  margin: 10px auto;
+  width: 95%;
+  background: url(../img/fondolibros.jpg);
+
+}
+
+.juego {
+
+  font-family: 'Poltawski Nowy', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.pregunta {
+  margin-bottom: 20px;
+}
+
+.pregunta p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pregunta .opciones label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#resultado {
+  margin-top: 20px;
+}
+
+.conte-juego {
+  margin: 10px auto;
+  width: 95%;
+  background-color: #63d471;
+  background-image: linear-gradient(315deg, #63d471 0%, #038134 74%);
+  ;
+
+
+}
+
+.cuerpojuego {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+
+
+}
+@media screen and (max-width:600px) {
+  .contenedor{
+background-color: #038134;
+    width: auto;
+    grid-template-columns: 1fr;
+   
+        grid-template-areas:
+        "parte0 parte0 parte0"
+        "parte1 parte1 parte1"
+        "parte2 parte2 parte2"
+        "parte3 parte3 parte3"
+        "parte4 parte4 parte4"
+  }
+ .contenedor a img{ 
+  width: 60px;
+
+}
+.parte1 {
+  margin: auto;
+
+  background-image: url(../img/hyv.jpg);
+}
+.parte2 p {
+  background-color: #038134;
+ margin: 10px;
+}
+.pelicont{
+  width: auto;
+}
+.pelicont a img{
+  width: 60px;
+
+}
+.cuerpofondo{
+ 
+  width: auto;}
+.cuerpofondo a img{
+  width: 60px;}
+.conte-juego {width: auto;
+}
+.conte-juego a img {
+ width: 60px;
+}
+.casa-box {width: auto;}
+.casa-box a img {width: 60px;}
+.footercasa{
+width: 100%;
+}
+} 
